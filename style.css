@@ -1,75 +1,96 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
+
+body {
     background-image: url('images/background-pattern-desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
     font-size: 20px;
     background-color: hsl(275, 100%, 97%);
 }
-h1,h3{
+
+h1, h3 {
     color: hsl(292, 42%, 14%);
 }
-.container{
+
+button {
+    border: none;
+    background: white;
+    all: unset;
+    position: relative;
+}
+
+.container {
     width: 600px;
     padding: 30px;
     margin: 150px auto;
     background: white;
     border-radius: 10px;
 }
-.item1{
+
+.item1 {
     display: flex;
     margin: 20px;
 }
-.item2{
+
+.item2 {
     display: flex;
     justify-content: space-between;
 }
-.item1 img{
-    margin-right:20px ;
+
+.item1 img {
+    margin-right: 20px;
 }
-.item3{
-    margin: 20px 0px;
+
+.item3 {
+    margin: 20px 0;
 }
-.item3 p{
+
+.item3 p {
     color: hsl(292, 16%, 49%);
+    display: none;
 }
-.item4,.item5,.item6{
-    margin: 30px 0px;
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid hsl(275, 100%, 97%);
-    border-bottom: ipx solid hsl(275, 100%, 97%);
+
+.item3 p.show {
+    display: block;
 }
-.item4 h3:hover{
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.item2 h3:hover,
+.item4 h3:hover,
+.item5 h3:hover,
+.item6 h3:hover {
     color: blueviolet;
-}.item5 h3:hover{
-    color: blueviolet;   
 }
-.item6 h3:hover{
-    color: blueviolet;
-}
-@media only screen and (max-width: 400px){
-    body{
+
+@media only screen and (max-width: 400px) {
+    body {
         background-color: hsl(275, 100%, 97%);
         background-image: url('images/background-pattern-mobile.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        /* width: 100vw; */
+        width: 100vw;
     }
- .container{
-    width: 100%;
-    margin: 50px auto;
-    padding: 0px;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
- }
- .item1{
-    margin: 0px;
- }
+
+    .container {
+        width: 80%;
+        margin: 150px auto 200px auto;
+        padding: 10px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item1 {
+        margin: 0;
+    }
 }
